@@ -1,12 +1,12 @@
 ﻿// Подсчитать сумму цифр в числе
-int num =  int.Parse(Console.ReadLine());
-int i = num;
-int sum = 0;
-while (i > 0)
-{
-    
-    sum = sum + num % 10;
-    
-}
-
-Console.WriteLine(" " + sum);
+Console.WriteLine("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+            int sum = 0;
+            while (num > 0)
+            {
+ 
+                sum = sum + num % 10;
+                num = num / 10 ;
+ 
+            }
+ Console.WriteLine("Сумма цифр в числе = " + sum);
